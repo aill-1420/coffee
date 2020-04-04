@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="HTML5-CSS-Reset.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="styleHomepage.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+    margin: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75%;
+  width: 50%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+    margin: 30px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+</style>
+</head>
+<body>
+        <header>
+            <nav>
+                <img src="logo.png" style="align-items: flex-start; width:10%; height: 10%; padding: 10px;">
+                <button  onclick="document.getElementById('id01').style.display='block'" name="signIn" class="w3-button w3-hover-black w3-round-large" style="background-color: #523A28; color: aliceblue; margin: 20px;">تسجيل الدخول</button>
+                <ul style="text-align-last:right;">
+                    <li><a href="homePage.html">الصفحة الرئيسية</a></li>
+                    <li><a href="project.html">محلات القهوة</a></li>
+                    <li><a class="active" href="representativePage.html">المندوبين</a></li>
+                    <li><a href="">العروض</a></li>
+                    <li><a href="">من نحن؟</a></li>
+                    <li><a href="basket.html"> سلة المشتريات <i class='fas fa-shopping-cart' style='font-size:20px;color:white'></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+<div class="container">
+  <img src="logimg.png" alt="Avatar" class="image">
+  <div class="overlay">
+  <a href="#" class="icon" title="User Profile">
+    <i class="fa fa-user"></i>
+  </a>
+  </div>
+</div>
+           
+        <footer>
+            <ul style="text-align-last:right;">
+                <li><a href="callPage.html"><i class='fab fa-rocketchat' style='font-size:20px;color:white'></i> الدعم</a></li>
+                <li><a><i class='fab fa-instagram' style='font-size:20px;color:white'></i> coffeeD</a></li>
+                <li><a><i class='fab fa-twitter' style='font-size:20px;color:white'></i> @coffeeD</a></li>
+                <li><a><i class='far fa-envelope' style='font-size:20px;color:white'></i> coffeeD@gmail.com</a></li>
+                <li><a><i class='fas fa-phone-alt' style='font-size:20px;color:white'></i> +966500112234</a></li>
+            </ul>
+        </footer>
+
+</body>
+</html>

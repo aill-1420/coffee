@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>الصفحة الرئيسية</title>
+        <link rel="stylesheet" href="HTML5-CSS-Reset.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="styleHomepage.css" type="text/css">
+         <link rel="stylesheet" href="styleHome.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="logo.png" style="align-items: flex-start; width:10%; height: 10%; padding: 10px;">
+                <button  onclick="document.getElementById('id01').style.display='block'" name="signIn" class="w3-button w3-hover-black w3-round-large" style="background-color: #523A28; color: aliceblue; margin: 20px;">تسجيل الدخول</button>
+                <ul style="text-align-last:right;">
+                    <li><a class="active" href="homePage.html">الصفحة الرئيسية</a></li>
+                    <li><a href="project.html">محلات القهوة</a></li>
+                    <li><a href="representativePage.html">المندوبين</a></li>
+                    <li><a href="">العروض</a></li>
+                    <li><a href="aboutUs.html">من نحن؟</a></li>
+                    <li><a href="basket.html"> سلة المشتريات <i class='fas fa-shopping-cart' style='font-size:20px;color:white'></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="logimg.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                    <h1> تسجيل الدخول</h1>
+                    <label for="uname"><b>إسم المستخدم</b></label>
+                    <input type="text" placeholder=".........@example.com" name="uname" required>
+                    <label>كلمة السر</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">تسجيل دخول</button>
+                    <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                <div>
+                    <h4> ليس لديك حساب؟</h4>
+                    <button  onclick="document.getElementById('id02').style.display='block'" name="signIn" class="w3-button w3-hover-black w3-round-large" style="background-color: #523A28; color: aliceblue; margin: 20px;">تسجيل مستخدم جديد</button>
+                </div> 
+            </form>
+        </div>
+        
+        <footer>
+            <ul style="text-align-last:right;">
+                <li><a href="callPage.html"><i class='fab fa-rocketchat' style='font-size:20px;color:white'></i> الدعم</a></li>
+                <li><a><i class='fab fa-instagram' style='font-size:20px;color:white'></i> coffeeD</a></li>
+                <li><a><i class='fab fa-twitter' style='font-size:20px;color:white'></i> @coffeeD</a></li>
+                <li><a><i class='far fa-envelope' style='font-size:20px;color:white'></i> coffeeD@gmail.com</a></li>
+                <li><a><i class='fas fa-phone-alt' style='font-size:20px;color:white'></i> +966500112234</a></li>
+            </ul>
+        </footer>
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="coffee.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 >محلاتنا المختارة</h1> 
+    </div>
+  </div>
+</div>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
